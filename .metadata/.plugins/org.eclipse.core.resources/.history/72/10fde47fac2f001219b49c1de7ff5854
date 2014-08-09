@@ -1,0 +1,35 @@
+package client.userinterface.datatypes.user;
+
+import javax.swing.JDialog;
+import javax.swing.JPanel;
+
+import client.control.data.entities.user.Student;
+
+public class UserListPanel extends JPanel {
+	
+	private static final long serialVersionUID = 1L;
+	
+	private UserList list = null;
+	
+	public UserListPanel() {
+		super();
+		setVisible(true);
+		//setLayout(null);
+		
+		list = new UserList();
+		//list.setSize(444, 274);
+		add(list);
+		
+		setSize(444, 274);
+		
+		Student[] users = new Student[10];
+		for (int i = 0; i < users.length; i++) {
+			users[i] = new Student();
+			users[i].setID(100000000 + i);
+			users[i].setFirstName("Fred");
+			users[i].setLastName("Fredburger");
+		}
+		
+		list.setItems(users);
+	}
+}

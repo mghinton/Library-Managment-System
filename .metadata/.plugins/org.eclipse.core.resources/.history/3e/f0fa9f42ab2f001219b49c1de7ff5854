@@ -1,0 +1,32 @@
+package util;
+
+////////awekfjhawelkfgjhsare;kgfharewlgkuhawef;uwharetlkuh
+
+import java.awt.Color;
+
+import javax.swing.ImageIcon;
+
+public class Constants {
+	
+	//Screen Sizes
+	public static final int SCREEN_HEIGHT = 700;
+	public static final int SCREEN_WIDTH = 1000;
+	public static final int MAXTABS = 5;
+	public static final int MINTABS = 0;
+
+	//GUI Icons
+	//Need to change paths to Resource directory
+	public static ImageIcon LOGO_LARGE = new ImageIcon("Resources/logo.gif");
+	public static ImageIcon LOGO_SMALL = new ImageIcon("Resources/logo_small.gif");
+	public static ImageIcon LOGOUT_ICON = new ImageIcon("Resources/logout.gif");
+	public static ImageIcon LOGIN_ICON = new ImageIcon("Resources/login.gif");
+	public static ImageIcon ADD_RESOURCE_ICON = new ImageIcon("Resources/add_resource.gif");
+	public static ImageIcon ADD_USER_ICON = new ImageIcon("Resources/add_user.gif");
+	public static ImageIcon SUBSCRIPTION_ICON = new ImageIcon();
+	public static ImageIcon REPORT_ICON = new ImageIcon();
+	public static ImageIcon TODO_ICON = new ImageIcon();
+	public static ImageIcon SEARCH_ICON = new ImageIcon();
+	
+	public static Color BACKGROUND = new Color(204, 51, 0);
+	public static Color BACKPANEL = new Color(210, 105, 30);
+}
